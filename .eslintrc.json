@@ -8,7 +8,15 @@
     "standard-with-typescript",
     "prettier"
   ],
-  "overrides": [],
+  "overrides": [
+    {
+      "files": ["vite.config.ts"],
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "project": "./tsconfig.config.json"
+      }
+    }
+  ],
   "parserOptions": {
     "project": "tsconfig.json",
     "ecmaVersion": "latest",
